@@ -12,6 +12,7 @@
 </head>
 <body>
     <form asp-action="RsvpForm" method="post">
+        <div asp-validation-summary="All"></div>
         <p>
             <label asp-for="Name">Your name:</label>
             <input asp-for="Name" />
@@ -21,7 +22,7 @@
             <input asp-for="Email" />
         </p>
         <p>
-            <label asp-for="Phone">Your name:</label>
+            <label asp-for="Phone">Your phone:</label>
             <input asp-for="Phone" />
         </p>
         <p>
